@@ -1,7 +1,7 @@
 /* Завдання 1. Зробіть , щоб HTML документ мав білий фон , використовуйте Root селектор */
 
 .root {
-  background: white;
+  background-color: white;
 }
 
 /* Завдання 2. Зробіть, щоб всі елементи на сторінці мали текст чорного кольору  */
@@ -32,17 +32,17 @@ h1 {
 Тут вам потрібно використовувати Селектор нащадка */
 
 section .box p {
-  background: red;
+  background-color: red;
 }
 
 section .box div {
-  background: green;
+  background-color: green;
 }
 
 /* Завдання 7. Задайте класу green зелений фон та білий колір тексту, використовуйте селектор класу  */
 
 .green {
-  background: green;
+  background-color: green;
   color: white;
 }
 
@@ -50,20 +50,20 @@ section .box div {
 Використовуйте селектор для позначення дочірних елементів ( parent_tag > children_tag ) */
 
 ul > li {
-  background: red;
+  background-color: red;
 }
 
 /* Завдання 9. Зробіть червоний фон для тегів, які є сестринськими відносно тега button з класом header-button 
 Використовуйте Сестринські селектори відносно header-button  */
 
 .header-button + span {
-  background: red;
+  background-color: red;
 }
 
 /* Завдання 10. Зробіть синій фон для всіх cусідських тегів <p>, тегу який має клас 'susid' , а текст білим застосувавши сусідський селектор */
 
 .susid ~ p {
-  background: blue;
+  background-color: blue;
   color: white;
 }
 
@@ -71,7 +71,7 @@ ul > li {
 
 .salo,
 #bread {
-  background: yellow;
+  background-color: yellow;
 }
 
 /*  Урок 2  */
@@ -94,14 +94,14 @@ ul > li {
 Використовуйте Селектор першої дитини :first-child. */
 
 .third-task ul:last-child li:first-child {
-  background: yellow;
+  background-color: yellow;
 }
 
 /* Завдання №4:  Змінити фон останнього елементу списку на жовтий. 
 Використовуйте Селектор останньої дитини :last-child. */
 
 .four-task li:last-child {
-  background: yellow;
+  background-color: yellow;
 }
 
 /* Завдання №5: Змінити колір тексту останнього елемента списку в останньому блоці ul на білий
@@ -122,21 +122,21 @@ ul > li {
 Використовуйте Селектор першого типу :first-of-type */
 
 .seven-task p:first-of-type {
-  background: red;
+  background-color: red;
 }
 
 /* Завдання №8:  Застосуйте червоний фон до останнього абзацу в div з классом eight-task
 Використовуйте Селектор останнього типу :last-of-type */
 
 .eight-task p:last-of-type {
-  background: red;
+  background-color: red;
 }
 
 /* Завдання №9: Застосуйте жовтий фон для всіх <p> елементів, якщо в батьківському елементі більше не має <p>.
 Використовуйте Селектор одиничного типу :only-of-type */
 
 .nine-task p:only-of-type {
-  background: yellow;
+  background-color: yellow;
 }
 
 /* Урок 3   */
@@ -159,40 +159,40 @@ ul > li {
 value зі значенням '3' */
 
 .lesson-three-task-three li[value='3'] {
-  background: red;
+  background-color: red;
 }
 
 /* Завдання №4. Застосуйте селектор наявності значення атрибута, щоб встановити синій фон для кнопки з класом "primary"  */
 
 .lesson-three-task-four button[class~='primary'] {
-  background: blue;
+  background-color: blue;
 }
 
 /* Завдання №5. Надайте червоний фон всім кнопка назви класу яких починаються зі слова secondary
 Використовуйте селектор префіксу значення атрибута */
 
 .lesson-three-task-five button[class|='secondary'] {
-  background: red;
+  background-color: red;
 }
 
 /* Завдання №6.  Застосуйте cелектор початку значення атрибута, щоб стилізувати тільки ті елементи списку, класи яких починаються на "b" та встановіть для них зелений колір тексту та білий фон. */
 
 .lesson-three-task-six li[class^='b'] {
   color: green;
-  background: white;
+  background-color: white;
 }
 
 /* Завдання №7. Застосуйте селектор кореня значення атрибута, щоб стилізувати тільки ті елементи списку, в назві класів яких зустрічається 'on' та встановіть для них зелений колір тексту та білий фон. */
 
 .lesson-three-task-seven li[class*='on'] {
   color: green;
-  background: white;
+  background-color: white;
 }
 
 /* Завдання №8. Напишіть CSS-код, який за допомогою конструкції селектор кінцівки значення атрибута виділить червоним фоном елементи , які мають в кінці назви класу літеру "s". */
 
 .lesson-three-task-eight span[class$='s'] {
-  background: rgb(170, 20, 20);
+  background-color: rgb(170, 20, 20);
 }
 
 /* Завдання №9. Зробіть першу букву заголовків червоним кольором.
@@ -207,14 +207,14 @@ h3::first-letter {
 Використовуйте селектор псевдоелементу першого рядка */
 
 .lesson-three-task-ten p::first-line {
-  background: yellow;
+  background-color: yellow;
 }
 
 /* Завдання №11. Задайте червоний фон плейсхолдера для інпут-поля.
 Використовуйте цей селектор псевдоелемента плейсхолдера */
 
 .lesson-three-task-eleven input::placeholder {
-  background: red;
+  background-color: red;
 }
 
 /* Завдання №12. Додайте "➤" перед кожним елементом списку; Використовуйте селектора псевдоелемента ”попереду” */
